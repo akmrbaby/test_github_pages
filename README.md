@@ -34,3 +34,17 @@ npm install
 // 依存関係に問題があれば無理やり解決
 npm audit fix --force
 ```
+
+git周りのメモ
+```sh
+// .gitignoreファイルの生成 (node_modules以下を無視)
+echo "**/node_modules/" > .gitignore
+
+// 開発用ブランチを切る
+git checkout -b dev
+
+// 編集結果をリモートリポジトリに反映
+git add *
+git commit -m "コメント"
+git push origin dev
+
